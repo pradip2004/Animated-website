@@ -58,7 +58,8 @@ a {
       display: flex;
       /* align-items: center; */
       justify-content: space-between;
-      margin: 15vw 0 ;
+      margin-top: 15vw;
+      /* background-color: gray; */
 }
 
 .hero-section-part1{
@@ -80,19 +81,15 @@ a {
       /* background-color: red; */
 }
 .hero-section-part1-img-wrapper img{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 150%;
-      height: 150%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
 }
 
 .hero-section-part2{
       width: 30vw;
-      height: 42vw;
-      background-color: rgb(167, 167, 167);
+      min-height: 42vw;
+      /* background-color: rgb(167, 167, 167); */
       position: relative;
 }
 .hero-section-part2 img{
@@ -118,12 +115,16 @@ a {
       font-size: 1vw;
       color: #5e5e5e;
       line-height: 1vw;
+      font-weight: 600;
+      margin-top: 1.2vw;
 }
 
 .hero-section-part3{
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 1vw;
+      width: 15vw;
       /* background-color: aqua; */
 }
 
@@ -144,4 +145,197 @@ a {
 .hero-section-part3 h4{
       font-weight: 100;
       color: #5e5e5e;
+}
+
+.motive-section{
+      width: 100%;
+      padding: 3vw 10vw;
+      display: flex;
+      margin-top: 7vw;
+      justify-content: space-between;
+}
+.motive-section > h3{
+      font-size: 1.2vw;
+      font-weight: 500;
+      color: #5e5e5e;
+      text-transform: capitalize;
+      margin-top: -25px;
+}
+
+.motive-section p{
+      width: 80%;
+      font-size: 1.5vw;
+      line-height: 3vw;
+      text-align: right;
+}
+
+.motive-section span{
+      display: inline-block;
+      width: 70px;
+      height: 35px;
+      background-color: red;
+      margin: 0 6px;
+      border-radius: 50px;
+      margin-bottom: -12.5px;
+}
+#span-1{
+      background-image: url(./assets/bluegirl.jpg);
+      background-size: cover;
+      background-position: 0% 60%;
+}
+#span-2{
+      width: 100px;
+      height: 40px;
+      background-image: url(./assets/shaljam.jpg);
+      background-size: cover;
+      background-position: center;
+}
+#span-3{
+      background-image: url(./assets/grass.jpg);
+      background-size: cover;
+      background-position: center;
+}
+
+.pictures-section{
+      padding: 3vw;
+      padding-left: 14vw;
+      padding-right: 12vw;
+      display: flex;
+      justify-content: space-between;
+}
+
+.pictures-section-part1{
+      width: 16vw;
+      /* background-color: red; */
+}
+.picture-section-text{
+      width: 100%;
+}
+.picture-section-text h1{
+      text-transform: capitalize;
+      letter-spacing: -.1vw;
+      font-weight: 100;
+}
+.picture-section-text p{
+      font-size: 13px;
+      margin-top: 10px;
+      opacity: .8;
+      line-height: 1;
+}
+
+.picture{
+      width: 100%;
+      margin-top: 8vw;
+      height: 22vw;
+      margin-bottom: 1vw;
+      /* background-color: rebeccapurple; */
+}
+.picture img{
+      width:  100%;
+      height: 100%;
+      object-fit: cover;
+}
+.pictures-section-part2{
+      width: 25vw;
+}
+.pictures-section-part2 .picture-section-text{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+}
+.part2-picture{
+      width: 100%;
+      margin-top: 8vw;
+      height: 35vw;
+      margin-bottom: 1vw;
+}
+
+.part2-picture img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.pictures-section-part2 p{
+      width: 50%;
+      text-align: right;
+}
+.banner-section{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.banner-img{
+      width: 65%;
+      height: 70vh;
+}
+
+.banner-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0% 70%;
+}
+
+.banner-text{
+      width: 35%;
+      padding: 0 3vw;
+}
+
+.banner-text h1{
+      font-size: 3vw;
+      line-height: .9;
+      font-weight: 400;
+      letter-spacing: -.1vw;
+}
+
+.banner-text p{
+      margin-top: 20px;
+      font-size: 14px;
+      width: 60%;
+}
+
+.future-section{
+      position: relative;
+      overflow: hidden;
+      /* margin-top: 10vw; */
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+
+.future-section video{
+      width: 100%;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) ;
+}
+.future-section-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+      background-color: #fff;
+      padding: 1vw 2vw;
+      border-radius: 10px;
+      
+}
+.future-section-text button{
+      font-size: 1.3vw;
+      text-transform: capitalize;
+      background-color: transparent;
+      padding: .5vw 1vw;
+      border: 2px solid #5e5e5e;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 1vw;
 }
